@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nadhira & Reyhan - Wedding Feed</title>
+    <meta
+      name="description"
+      content="Undangan digital Nadhira & Reyhan dengan konsep social media feed / Instagram style."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio id="bgMusic" loop preload="none" src="https://files.catbox.moe/ounkt4.mp3"></audio>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-lockup" aria-label="Wedding profile">
+          <span class="camera-dot"></span>
+          <strong>@nadhira.reyhan</strong>
+        </div>
+        <button class="music-toggle" id="musicToggle" type="button" aria-label="Putar musik">
+          <span class="music-icon">♪</span>
+        </button>
+      </header>
+
+      <main>
+        <section class="profile-card reveal">
+          <div class="profile-main">
+            <button class="avatar-ring" type="button" aria-label="Profile Nadhira dan Reyhan">
+              <img
+                src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=500&q=85"
+                alt="Foto prewedding Nadhira dan Reyhan"
+              />
+            </button>
+            <div class="profile-copy">
+              <p class="username">@nadhira.reyhan</p>
+              <h1>Nadhira & Reyhan</h1>
+              <p class="bio">Two hearts, one journey <span>🤍</span></p>
+              <p class="date-pin">📍 12.12.2026</p>
+            </div>
+          </div>
+          <div class="profile-stats" aria-label="Profile stats">
+            <div><strong>8</strong><span>Posts</span></div>
+            <div><strong>12.12K</strong><span>Followers</span></div>
+            <div><strong>1</strong><span>Following</span></div>
+          </div>
+        </section>
+
+        <nav class="story-rail reveal" aria-label="Story highlight">
+          <a class="story-item" href="#opening">
+            <span>Save</span>
+            <small>the Date</small>
+          </a>
+          <a class="story-item" href="#story">
+            <span>Our</span>
+            <small>Story</small>
+          </a>
+          <a class="story-item" href="#detail">
+            <span>Event</span>
+            <small>Detail</small>
+          </a>
+          <a class="story-item" href="#rsvp">
+            <span>RSVP</span>
+            <small>Now</small>
+          </a>
+          <a class="story-item" href="#gift">
+            <span>Gift</span>
+            <small>Love</small>
+          </a>
+        </nav>
+
+        <section class="feed" aria-label="Wedding feed">
+          <article class="post-card reveal" id="opening" data-likes="1245">
+            <div class="post-head">
+              <div class="mini-profile">
+                <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=160&q=85" alt="" />
+                <div>
+                  <strong>@nadhira.reyhan</strong>
+                  <span>Just now</span>
+                </div>
+              </div>
+              <button class="icon-button" type="button" aria-label="Menu post">•••</button>
+            </div>
+            <div class="post-image hero-image">
+              <img
+                src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=1400&q=90"
+                alt="Foto prewedding utama Nadhira dan Reyhan"
+              />
+              <span class="burst-heart" aria-hidden="true">♥</span>
+            </div>
+            <div class="post-body">
+              <div class="actions">
+                <button class="like-button" type="button" aria-label="Sukai post">♡</button>
+                <button type="button" aria-label="Komentar">💬</button>
+                <button type="button" aria-label="Bagikan">✈</button>
+              </div>
+              <p class="likes"><span class="like-count">1.245</span> likes</p>
+              <p class="caption"><strong>@nadhira.reyhan</strong> Finally... we're getting married 🤍</p>
+              <p class="caption fade-line">Sabtu, 12 Desember 2026<br />08.00 WIB<br />Masjid Al-Ikhlas</p>
+              <p class="caption muted fade-line">
+                Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir dan memberikan doa restu di hari bahagia kami.
+              </p>
+              <button class="primary-cta" id="openInvitation" type="button">LIHAT UNDANGAN</button>
+            </div>
+          </article>
+
+          <article class="post-card reveal" id="countdown">
+            <div class="post-head">
+              <div class="mini-profile">
+                <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=160&q=85" alt="" />
+                <div>
+                  <strong>@nadhira.reyhan</strong>
+                  <span>7 months to go</span>
+                </div>
+              </div>
+              <button class="icon-button" type="button" aria-label="Menu post">•••</button>
+            </div>
+            <div class="text-photo gradient-photo">
+              <span>Counting days to forever...</span>
+              <small>12 Desember 2026 | 08.00 WIB</small>
+            </div>
+            <div class="post-body">
+              <div class="countdown-grid" aria-label="Countdown menuju akad">
+                <div><strong id="days">0</strong><span>Hari</span></div>
+                <div><strong id="hours">0</strong><span>Jam</span></div>
+                <div><strong id="minutes">0</strong><span>Menit</span></div>
+                <div><strong id="seconds">0</strong><span>Detik</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card reveal">
+            <div class="post-head">
+              <div class="mini-profile">
+                <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=160&q=85" alt="" />
+                <div>
+                  <strong>@nadhira.reyhan</strong>
+                  <span>Bismillah</span>
+                </div>
+              </div>
+              <button class="icon-button" type="button" aria-label="Menu post">•••</button>
+            </div>
+            <div class="post-body prayer-post">
+              <p class="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+              <p class="arabic">اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ</p>
+              <p class="quote-label">(QS. Ar-Rum: 21)</p>
+              <p class="caption fade-line">
+                "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan pasangan hidup agar kamu merasa tenteram dan dipenuhi kasih sayang."
+              </p>
+            </div>
+          </article>
+
+          <article class="post-card reveal">
+            <div class="post-head">
+              <div class="mini-profile">
+                <img src="https://images.unsplash.com/photo-1494955870715-979ca4f13bf0?auto=format&fit=crop&w=160&q=85" alt="" />
+                <div>
+                  <strong>@nadhira.reyhan</strong>
+                  <span>Couple reveal</span>
+                </div>
+              </div>
+              <button class="icon-button" type="button" aria-label="Menu post">•••</button>
+            </div>
+            <div class="couple-frame">
+              <div>
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=85" alt="Nadhira Ayunindya Zahra" />
+                <h2>Nadhira Ayunindya Zahra</h2>
+                <p>Putri Sulung dari Bapak Yusuf & Ibu Aisyah</p>
+              </div>
+              <span>&</span>
+              <div>
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=85" alt="Reyhan Rafasya Fahmi" />
+                <h2>Reyhan Rafasya Fahmi</h2>
+                <p>Putra Bungsu dari Bapak Harun & Ibu Khadijah</p>
+              </div>
+            </div>
+            <div class="post-body">
+              <p class="caption"><strong>@nadhira.reyhan</strong> Two souls, one love story 🤍</p>
+            </div>
+          </article>
+
+          <article class="post-card reveal" id="story">
+            <div class="post-head">
+              <div class="mini-profile">
+                <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=160&q=85" alt="" />
+                <div>
+                  <strong>@nadhira.reyhan</strong>
+                  <span>Our love story</span>
+                </div>
+              </div>
+              <button class="icon-button" type="button" aria-label="Menu post">•••</button>
+            </div>
+            <div class="post-image">
+              <img
+                src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=1400&q=90"
+                alt="Momen romantis Nadhira dan Reyhan"
+              />
+              <span class="burst-heart" aria-hidden="true">♥</span>
+            </div>
+            <div class="post-body">
+              <p class="caption"><strong>@nadhira.reyhan</strong> Every love story starts somewhere...</p>
+              <p class="caption fade-line">
+                Berawal dari pertemuan sederhana, kami tidak pernah menyangka bahwa perjalanan ini akan membawa kami sejauh ini.
+              </p>
+              <p class="caption fade-line">
+                Dari obrolan ringan hingga menjadi bagian penting dalam hidup satu sama lain.
+              </p>
+              <p class="caption fade-line">Dan kini... kami siap melangkah bersama selamanya.</p>
+              <p class="hashtags">#OurLoveStory #ForeverBegins</p>
+            </div>
+          </article>
+
+          <article class="post-card reveal" id="detail">
+            <div class="post-head">
+              <div class="mini-profile">
+                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=160&q=85" alt="" />
+                <div>
+                  <strong>@nadhira.reyhan</strong>
+                  <span>Save the date</span>
+                </div>
+              </div>
+              <button class="icon-button" type="button" aria-label="Menu post">•••</button>
+            </div>
+            <div class="post-body detail-post">
+              <p class="caption title-caption">Save the date ✨</p>
+              <div class="event-block">
+                <strong>AKAD NIKAH</strong>
+                <span>Sabtu, 12 Desember 2026</span>
+                <span>08.00 WIB</span>
+                <span>Masjid Al-Ikhlas</span>
+              </div>
+              <div class="event-block">
+                <strong>RECEPTION</strong>
+                <span>11.00 - 14.00 WIB</span>
+                <span>Gedung Serbaguna Bahagia</span>
+              </div>
+              <a class="secondary-cta" href="https://www.google.com/maps/search/Masjid+Al-Ikhlas" target="_blank" rel="noreferrer">
+                LIHAT LOKASI
+              </a>
+            </div>
+          </article>
+
+          <section class="gallery-section reveal" id="gallery" aria-label="Gallery feed">
+            <div class="section-head">
+              <p class="username">@nadhira.reyhan</p>
+              <h2>Captured moments 🤍</h2>
+            </div>
+            <div class="gallery-grid">
+              <button type="button"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=700&q=85" alt="Galeri prewedding 1" /></button>
+              <button type="button"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=700&q=85" alt="Galeri prewedding 2" /></button>
+              <button type="button"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=85" alt="Galeri prewedding 3" /></button>
+              <button type="button"><img src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=700&q=85" alt="Galeri prewedding 4" /></button>
+              <button type="button"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=85" alt="Galeri prewedding 5" /></button>
+              <button type="button"><img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=700&q=85" alt="Galeri prewedding 6" /></button>
+            </div>
+          </section>
+
+          <article class="post-card reveal" id="rsvp">
+            <div class="post-head">
+              <div class="mini-profile">
+                <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=160&q=85" alt="" />
+                <div>
+                  <strong>@nadhira.reyhan</strong>
+                  <span>RSVP open</span>
+                </div>
+              </div>
+              <button class="icon-button" type="button" aria-label="Menu post">•••</button>
+            </div>
+            <div class="post-body">
+              <p class="caption title-caption">Will you be part of our story?</p>
+              <form class="rsvp-form" id="rsvpForm">
+                <fieldset>
+                  <legend>Pilihan Kehadiran</legend>
+                  <label><input type="radio" name="attendance" value="InsyaAllah hadir" checked /> InsyaAllah hadir</label>
+                  <label><input type="radio" name="attendance" value="Maaf tidak bisa hadir" /> Maaf tidak bisa hadir</label>
+                  <label><input type="radio" name="attendance" value="Masih ragu" /> Masih ragu</label>
+                </fieldset>
+                <label>
+                  Nama
+                  <input name="name" type="text" placeholder="Nama Anda" required />
+                </label>
+                <label>
+                  Jumlah tamu
+                  <input name="guests" type="number" min="1" max="10" value="1" required />
+                </label>
+                <label>
+                  Pesan
+                  <textarea name="message" rows="3" placeholder="Tulis doa atau pesan"></textarea>
+                </label>
+                <button class="primary-cta" type="submit">RSVP SEKARANG</button>
+              </form>
+              <div class="guest-list">
+                <strong>Daftar Kehadiran</strong>
+                <ul id="guestList">
+                  <li>Anisa - InsyaAllah hadir (2 orang)</li>
+                  <li>Budi - Masih ragu</li>
+                  <li>Rina - Tidak bisa hadir</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card reveal" id="gift">
+            <div class="post-head">
+              <div class="mini-profile">
+                <img src="https://images.unsplash.com/photo-1542042161784-26ab9e041e89?auto=format&fit=crop&w=160&q=85" alt="" />
+                <div>
+                  <strong>@nadhira.reyhan</strong>
+                  <span>Wedding gift</span>
+                </div>
+              </div>
+              <button class="icon-button" type="button" aria-label="Menu post">•••</button>
+            </div>
+            <div class="post-body">
+              <p class="caption title-caption">Your prayers are the greatest gift 🤍</p>
+              <div class="gift-card">
+                <span>Bank BCA</span>
+                <strong>1234567890</strong>
+                <small>a.n Nadhira</small>
+                <button class="copy-button" type="button" data-copy="1234567890">SALIN</button>
+              </div>
+              <div class="gift-card">
+                <span>Bank Mandiri</span>
+                <strong>0987654321</strong>
+                <small>a.n Reyhan</small>
+                <button class="copy-button" type="button" data-copy="0987654321">SALIN</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card final-post reveal">
+            <div class="post-image">
+              <img
+                src="https://images.unsplash.com/photo-1509610973147-232dfea52a97?auto=format&fit=crop&w=1400&q=90"
+                alt="Penutup undangan Nadhira dan Reyhan"
+              />
+            </div>
+            <div class="post-body closing-copy">
+              <p>"See you on our special day 🤍"</p>
+              <h2>Nadhira & Reyhan</h2>
+              <span>#HappilyEverAfter</span>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button type="button" id="closeLightbox" aria-label="Tutup preview">×</button>
+      <img id="lightboxImage" alt="Preview galeri" />
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Copied!</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
